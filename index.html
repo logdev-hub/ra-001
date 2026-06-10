@@ -306,7 +306,7 @@
       <div class="model-help">Segure os botões para movimento contínuo.</div>
     </div>
     <a-scene
-      mindar-image="imageTargetSrc: ./targets.mind; autoStart: false; maxTrack: 1; filterMinCF: 0.0008; filterBeta: 750.0; warmupTolerance: 3; missTolerance: 12;"
+      mindar-image="imageTargetSrc: ./targets.mind; autoStart: false; maxTrack: 7; filterMinCF: 0.0008; filterBeta: 750.0; warmupTolerance: 3; missTolerance: 12;"
       color-space="sRGB"
       renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
@@ -314,7 +314,13 @@
       embedded
     >
       <a-assets>
-        <img id="overlay-0" src="./assets/target_0_overlay.jpeg" />
+        <img id="overlay-0" src="./assets/target_0_overlay.png" />
+        <img id="overlay-1" src="./assets/target_1_overlay.png" />
+        <img id="overlay-2" src="./assets/target_2_overlay.png" />
+        <img id="overlay-3" src="./assets/target_3_overlay.png" />
+        <img id="overlay-4" src="./assets/target_4_overlay.png" />
+        <img id="overlay-5" src="./assets/target_5_overlay.png" />
+        <img id="overlay-6" src="./assets/target_6_overlay.png" />
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -333,9 +339,129 @@
       >
         <a-plane
           src="#overlay-0"
-          width="1.0"
-          height="0.97"
-          position="0 0 0"
+          width="2.43"
+          height="0.63"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 1"
+        data-name="alvo-2"
+        data-target-index="1"
+        data-panel-index="1"
+        data-target-group="1"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-1"
+          width="2.63"
+          height="0.63"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 2"
+        data-name="alvo-3"
+        data-target-index="2"
+        data-panel-index="2"
+        data-target-group="2"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-2"
+          width="2.69"
+          height="0.552"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 3"
+        data-name="alvo-4"
+        data-target-index="3"
+        data-panel-index="3"
+        data-target-group="3"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-3"
+          width="2.9"
+          height="0.64"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 4"
+        data-name="alvo-5"
+        data-target-index="4"
+        data-panel-index="4"
+        data-target-group="4"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-4"
+          width="2.77"
+          height="0.65"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 5"
+        data-name="alvo-6"
+        data-target-index="5"
+        data-panel-index="5"
+        data-target-group="5"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-5"
+          width="2.79"
+          height="0.65"
+          position="0 -1.5 0"
+          rotation="0 0 0"
+        ></a-plane>
+      </a-entity>
+      <a-entity
+        class="mindar-target"
+        mindar-image-target="targetIndex: 6"
+        data-name="alvo-7"
+        data-target-index="6"
+        data-panel-index="6"
+        data-target-group="6"
+        data-type="image"
+        data-video-id=""
+        data-video-autoplay="1"
+        data-video-volume="1.0"
+      >
+        <a-plane
+          src="#overlay-6"
+          width="2.79"
+          height="0.65"
+          position="0 -1.5 0"
           rotation="0 0 0"
         ></a-plane>
       </a-entity>
